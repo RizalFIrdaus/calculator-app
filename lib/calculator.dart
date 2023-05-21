@@ -8,8 +8,82 @@ class Calculator extends StatefulWidget {
 }
 
 class _CalculatorState extends State<Calculator> {
+  var number_0 = 0;
+  var number_1 = 1;
+  var number_2 = 2;
+  var number_3 = 3;
+  var number_4 = 4;
+  var number_5 = 5;
+  var number_6 = 6;
+  var number_7 = 7;
+  var number_8 = 8;
+  var number_9 = 9;
+  var operand_1 = 0;
+  var operand_2 = 0;
+  var operators = '';
+
   @override
   Widget build(BuildContext context) {
+    void actionNumber_1() {
+      setState(() {
+        operand_1 = number_1;
+      });
+    }
+
+    void actionNumber_2() {
+      setState(() {
+        operand_1 = number_2;
+      });
+    }
+
+    void actionNumber_3() {
+      setState(() {
+        operand_1 = number_3;
+      });
+    }
+
+    void actionNumber_4() {
+      setState(() {
+        operand_1 = number_4;
+      });
+    }
+
+    void actionNumber_5() {
+      setState(() {
+        operand_1 = number_5;
+      });
+    }
+
+    void actionNumber_6() {
+      setState(() {
+        operand_1 = number_6;
+      });
+    }
+
+    void actionNumber_7() {
+      setState(() {
+        operand_1 = number_7;
+      });
+    }
+
+    void actionNumber_8() {
+      setState(() {
+        operand_1 = number_8;
+      });
+    }
+
+    void actionNumber_9() {
+      setState(() {
+        operand_1 = number_9;
+      });
+    }
+
+    void actionNumber_0() {
+      setState(() {
+        operand_1 = number_0;
+      });
+    }
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
@@ -38,9 +112,9 @@ class _CalculatorState extends State<Calculator> {
                 alignment: AlignmentDirectional.center,
                 children: [
                   Image.asset('assets/images/variable.png'),
-                  const Text(
-                    '12',
-                    style: TextStyle(
+                  Text(
+                    '$operand_1',
+                    style: const TextStyle(
                       shadows: [
                         Shadow(
                           offset: Offset(3, 12),
@@ -157,7 +231,7 @@ class _CalculatorState extends State<Calculator> {
                       backgroundColor:
                           const Color(0xffA0A572), // Button background color
                     ),
-                    onPressed: () {},
+                    onPressed: actionNumber_7,
                     child: const Center(
                       child: Text(
                         '7',
@@ -179,7 +253,7 @@ class _CalculatorState extends State<Calculator> {
                       backgroundColor:
                           const Color(0xffA0A572), // Button background color
                     ),
-                    onPressed: () {},
+                    onPressed: actionNumber_8,
                     child: const Center(
                       child: Text(
                         '8',
@@ -201,7 +275,7 @@ class _CalculatorState extends State<Calculator> {
                       backgroundColor:
                           const Color(0xffA0A572), // Button background color
                     ),
-                    onPressed: () {},
+                    onPressed: actionNumber_9,
                     child: const Center(
                       child: Text(
                         '9',
@@ -245,7 +319,7 @@ class _CalculatorState extends State<Calculator> {
                       backgroundColor:
                           const Color(0xffA0A572), // Button background color
                     ),
-                    onPressed: () {},
+                    onPressed: actionNumber_4,
                     child: const Center(
                       child: Text(
                         '4',
@@ -267,7 +341,7 @@ class _CalculatorState extends State<Calculator> {
                       backgroundColor:
                           const Color(0xffA0A572), // Button background color
                     ),
-                    onPressed: () {},
+                    onPressed: actionNumber_5,
                     child: const Center(
                       child: Text(
                         '5',
@@ -289,7 +363,7 @@ class _CalculatorState extends State<Calculator> {
                       backgroundColor:
                           const Color(0xffA0A572), // Button background color
                     ),
-                    onPressed: () {},
+                    onPressed: actionNumber_6,
                     child: const Center(
                       child: Text(
                         '6',
@@ -333,7 +407,7 @@ class _CalculatorState extends State<Calculator> {
                       backgroundColor:
                           const Color(0xffA0A572), // Button background color
                     ),
-                    onPressed: () {},
+                    onPressed: actionNumber_1,
                     child: const Center(
                       child: Text(
                         '1',
@@ -355,7 +429,7 @@ class _CalculatorState extends State<Calculator> {
                       backgroundColor:
                           const Color(0xffA0A572), // Button background color
                     ),
-                    onPressed: () {},
+                    onPressed: actionNumber_2,
                     child: const Center(
                       child: Text(
                         '2',
@@ -377,7 +451,7 @@ class _CalculatorState extends State<Calculator> {
                       backgroundColor:
                           const Color(0xffA0A572), // Button background color
                     ),
-                    onPressed: () {},
+                    onPressed: actionNumber_3,
                     child: const Center(
                       child: Text(
                         '3',
@@ -423,7 +497,7 @@ class _CalculatorState extends State<Calculator> {
                           shadowColor: Colors.black.withOpacity(0.4),
                           backgroundColor: const Color(0xffA0A572),
                         ),
-                        onPressed: () {},
+                        onPressed: actionNumber_0,
                         child: const SizedBox(
                           width: double.infinity,
                           child: Text(
