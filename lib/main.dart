@@ -1,3 +1,4 @@
+import 'package:calculator_miaw/calculator.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -46,9 +47,14 @@ class SplashScreen extends StatelessWidget {
                   shadowColor: Colors.black,
                   elevation: 20,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Route calculator = MaterialPageRoute(
+                    builder: (context) => const Calculator(),
+                  );
+                  Navigator.push(context, calculator);
+                },
                 child: const Text(
-                  'MIAW ...',
+                  'MIAW...',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 32,
